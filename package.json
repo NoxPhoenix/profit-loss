@@ -1,0 +1,35 @@
+{
+  "name": "profit-loss",
+  "version": "1.0.0",
+  "description": "Profit loss calculator",
+  "main": "app.js",
+  "dependencies": {
+    "eslint": "^4.15.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.20.1",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoxPhoenix/profit-loss.git"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "crypto"
+  ],
+  "author": "NoxPhoenix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoxPhoenix/profit-loss/issues"
+  },
+  "homepage": "https://github.com/NoxPhoenix/profit-loss#readme"
+}
