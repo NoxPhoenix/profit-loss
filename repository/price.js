@@ -6,7 +6,7 @@ const historicalParams = baseParams.concat(['tsym', 'aggregate', 'limit']);
 
 module.exports = {
   getCurrentPriceInUSD (coin, e = 'CCCAGG') {
-    return cryptoCompareClient.getData({ fsym: coin, tsyms: 'USD', e });
+    return cryptoCompareClient.getCurrent({ fsym: coin, tsyms: 'USD', e });
   },
 
   getHistoricalPriceByMinute (coin, options = {}) {
