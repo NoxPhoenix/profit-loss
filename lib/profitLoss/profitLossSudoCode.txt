@@ -1,0 +1,25 @@
+Given TR, Coin, and AgI
+  Fetch all coin trades for up to EoTR
+  Fetch all coin prices in TR over AgI in USD
+
+Create Array of timestamps over AgI in TR
+  For Each Trade in TR (also need the last chunk of array)
+  Slice arrays into ranges of time between trades (SoTR - < First Trade, >= Trade - < Trade || <= EoTR)
+    or Order timestamps in chronollogical order, then slice off chunks where timestamp is before each trades
+
+For each time range array
+  With all previous trades
+    Calculate Amount of Coin
+    Calculate average cost of coin
+    For each timestamp in array
+      Use coin price data to caclulate percentage gain in USD
+
+Merge timestamp arrays
+Return Profit/Loss Data
+
+
+** Definitions **
+TR: Time Range
+EoTR: End of Time Range
+SoTR: Start of Time Range
+AgI: Aggragate Interval

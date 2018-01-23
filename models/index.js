@@ -9,3 +9,5 @@ const userData = new Sequelize({
   host: config.USERDATA_SERVER,
   dialect: 'mysql',
 });
+
+require('./users')(userData);

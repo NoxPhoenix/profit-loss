@@ -60,4 +60,5 @@ typings/
 
 # directory crap
 .DS_Store
+.vscode/
 
