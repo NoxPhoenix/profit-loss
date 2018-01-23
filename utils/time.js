@@ -1,5 +1,5 @@
 const momentRound = require('moment-round');
-const { extendMoment } = require('moment-round');
+const { extendMoment } = require('moment-range');
 
 const moment = extendMoment(momentRound);
 
@@ -24,5 +24,5 @@ module.exports = {
 
   range (startDate, endDate) {
     return moment.range(this.format(startDate), this.format(endDate));
-  }
+  },
 };

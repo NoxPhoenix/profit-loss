@@ -5,19 +5,17 @@ const WeekStrategy = require('./week');
 function chooseStrategy (length, endTime) {
   switch (length) {
     case 'hour':
-      return new HourStrategy(endTime);
+      return Promise.resolve(new HourStrategy(endTime));
     case 'day':
-      return new DayStrategy(endTime);
+      return Promise.resolve(new DayStrategy(endTime));
     case 'week':
-      return new WeekStrategy(endTime);
+      return Promise.resolve(new WeekStrategy(endTime));
     default:
-      return new DayStrategy(endTime);
+      return Promise.resolve(new DayStrategy(endTime));
   }
 }
 
-module.exports = {
-  buildTimeRangeArray (length, endTime) {
-    return chooseStrategy(length, endTime)
-      .then(strategy => strategy.timeRangeArray());
-  },
+module.exports = function buildTimeRange (length, endTime) {
+  return chooseStrategy(length, endTime)
+    .then(strategy => strategy.timeRange());
 };

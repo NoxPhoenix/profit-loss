@@ -1,0 +1,44 @@
+
+Timestamp,Balance,Amount,Currency,To,Notes,Instantly Exchanged,Transfer Total,Transfer Total Currency,Transfer Fee,Transfer Fee Currency,Transfer Payment Method,Transfer ID,Order Price,Order Currency,Order BTC,Order Tracking Code,Order Custom Parameter,Order Paid Out,Recurring Payment ID,Coinbase ID (visit https://www.coinbase.com/transactions/[ID] in your browser),Bitcoin Hash (visit https://www.coinbase.com/tx/[HASH] in your browser for more info)
+2017-10-12 11:09:52 -0700,0.00720021,0.00720021,BTC,59dfaf27a4c3a002d6e0bf49,"Bought 0.00720021 BTC for $40.00 USD.
+
+Paid for with Fifth Third Bank - 5/3... ******1823. Your digital currency will arrive by the end of day on Friday Oct 20, 2017.",false,40.0,USD,1.99,USD,Fifth Third Bank - 5/3... ******1823,59dfafe64e9b810342c690d6,"","","","","","","",59dfaff055a99d000142cd26,""
+2017-10-12 11:17:14 -0700,0.01253961,0.0053394,BTC,59dfaf27a4c3a002d6e0bf49,Bought 0.0053394 BTC for $30.00 USD.,false,30.0,USD,1.99,USD,MasterCard debit ********6079,59dfb1a264773900cc33375a,"","","","","","","",59dfb1aaede0d80001c525ae,""
+2017-10-12 11:30:00 -0700,0.00720154,-0.00533807,BTC,3Aq1pCgk3ewL4Zz4SPruAPUxMDYW9UTC2k,"",false,"","","","","","","","","","","","","",59dfb4a7df1dbc0282da5452,5eeee84ef9e82bfef00e09038672512497b574d9db5fd6acc9aaad70e7dc48bd
+2017-10-13 06:35:32 -0700,0.01732543,0.01012389,BTC,59dfaf27a4c3a002d6e0bf49,Bought 0.01012389 BTC for $60.00 USD.,false,60.0,USD,2.99,USD,MasterCard debit ********6079,59e0c11da7958800c3a8e48a,"","","","","","","",59e0c123f94b8300017d986e,""
+2017-10-13 06:40:46 -0700,0.01911043,0.001785,BTC,mr.mikyo@gmail.com,"Congrats! You just earned a $10 bonus for accepting your friend A Friend's Coinbase invite! They also got $10 of bitcoin for telling you about Coinbase.
+
+Find out more on the https://www.coinbase.com/invite_friends page.",false,"","","","","","","","","","","","","",59e0c25e5386f4000126b255,""
+2017-10-14 11:40:45 -0700,0.02361043,0.0045,BTC,"","",false,"","","","","","","","","","","","","",59e25a2df94b830001220b8b,0b944d5ce38cb6227e2436d01c6b901fae529bb62b4a7fc3284582dcd905a7cd
+2017-10-18 06:40:35 -0700,0.0271272,0.00351677,BTC,59dfaf27a4c3a002d6e0bf49,Bought 0.00351677 BTC for $20.00 USD.,false,20.0,USD,1.49,USD,MasterCard debit ********6079,59e759d077904300b797e2db,"","","","","","","",59e759d37dbf0f0001b73235,""
+2017-11-02 06:27:52 -0700,0.0,-0.0271272,BTC,5083a5425b4a5b0200000001,59fb1d53f23da600ee989716,false,189.3,USD,2.99,USD,USD Wallet,59fb1d53f23da600ee989716,"","","","","","","",59fb1d58b72a380001d5f950,""
+2017-11-29 05:10:24 -0800,0.03236803,0.03236803,BTC,59dfaf27a4c3a002d6e0bf49,Bought 0.03236803 BTC for $362.00 USD.,false,362.0,USD,5.31,USD,USD Wallet,5a1eb1b72797d10105a827cd,"","","","","","","",5a1eb1bfb6afee000106f074,""
+2017-11-29 08:28:23 -0800,0.03920669,0.00683866,BTC,59dfaf27a4c3a002d6e0bf49,Bought 0.00683866 BTC for $80.00 USD.,false,80.0,USD,3.07,USD,MasterCard debit ********6079,5a1ee018984d9800d1077ccf,"","","","","","","",5a1ee0269147310001f0eefc,""
+2017-11-29 08:32:14 -0800,0.03169813,-0.00750856,BTC,1NygiidSkeb37ej3WrkfFmrRmgsAWsPSmk,"",false,"","","","","","","","","","","","","",5a1ee10e8146b402c0329b7c,20b01711eb658d1ad2e28750d4a9c8c4ade7095ede57741bc9a65183ac4c1169
+2017-11-30 06:56:57 -0800,0.04179114,0.01009301,BTC,59dfaf27a4c3a002d6e0bf49,Bought 0.01009301 BTC for $100.00 USD.,false,100.0,USD,3.84,USD,MasterCard debit ********6079,5a201c326c763100d7bc34d6,"","","","","","","",5a201c3970baf200015220c3,""
+2017-12-03 07:59:22 -0800,0.04458553,0.00279439,BTC,59dfaf27a4c3a002d6e0bf49,Bought 0.00279439 BTC for $35.00 USD.,false,35.0,USD,1.99,USD,MasterCard debit ********6079,5a241f57d4c78501039d6dc0,"","","","","","","",5a241f5a630e240001769ca1,""
+2017-12-03 08:01:06 -0800,0.04169576,-0.00288977,BTC,1NygiidSkeb37ej3WrkfFmrRmgsAWsPSmk,"",false,"","","","","","","","","","","","","",5a241fc24cd1fd00efd9dc21,fa6120daf2cfffe001bac136159a3434ce68c09c076ecad9bc75ab744e732c24
+2017-12-04 09:41:22 -0800,0.03827743,-0.00341833,BTC,1DuS9fTxeMnHN9FLP1JMo7rNPJ9iMDmfpD,"",false,"","","","","","","","","","","","","",5a2588c215ac2d01504e66d8,27eae7b67752609bfa9af83a52164f06ffa3834a742bbbb5c0f205bb5a70e560
+2017-12-05 08:29:35 -0800,0.0337216,-0.00455583,BTC,1DuS9fTxeMnHN9FLP1JMo7rNPJ9iMDmfpD,"",false,"","","","","","","","","","","","","",5a26c96f75ec4b01044cfd8a,23d4350d624519feb299d6457f196ac4434218c5b02f5b77f84365eeede1d030
+2017-12-06 10:52:37 -0800,0.0344986,0.000777,BTC,mr.mikyo@gmail.com,Congrats! You just earned a $10 bonus for inviting your friend William Hilton to Coinbase. They received the same bonus. Earn more by inviting your friends with this link: https://www.coinbase.com/join/59dfaf26a4c3a002d6e0bf2b,false,"","","","","","","","","","","","","",5a283c757b9fda00010ef62d,""
+2017-12-07 06:59:19 -0800,0.03145825,-0.00304035,BTC,1DuS9fTxeMnHN9FLP1JMo7rNPJ9iMDmfpD,"",false,"","","","","","","","","","","","","",5a2957471a6e760106db7829,e410b724600186eb37e931c4119089faab0d90a96d7b4023e8fcce8d3fea2bd6
+2017-12-07 11:18:10 -0800,0.03377145,0.0023132,BTC,59dfaf27a4c3a002d6e0bf49,Bought 0.0023132 BTC for $40.00 USD.,false,40.0,USD,1.99,USD,MasterCard debit ********6079,5a2993e75cedba0119cc198e,"","","","","","","",5a2993f1f3c374000136c475,""
+2017-12-07 11:29:18 -0800,0.03048142,-0.00329003,BTC,1DuS9fTxeMnHN9FLP1JMo7rNPJ9iMDmfpD,"",false,"","","","","","","","","","","","","",5a29968e3f0bfe031327d4a2,4a3abb47964ec312c60993c28c9dad595ecb183bcb6c19a44e67794de68eed05
+2017-12-08 05:38:49 -0800,0.04283206,0.01235064,BTC,59dfaf27a4c3a002d6e0bf49,Bought 0.01235064 BTC for $200.00 USD.,false,200.0,USD,7.67,USD,MasterCard debit ********6079,5a2a95e41d98b400d3f4d381,"","","","","","","",5a2a95e90c4b8a0001bdd377,""
+2017-12-12 06:41:11 -0800,0.03842182,-0.00441024,BTC,5083a5425b4a5b0200000001,5a2fea7c2a68fa0118299530,false,72.01,USD,2.99,USD,USD Wallet,5a2fea7c2a68fa0118299530,"","","","","","","",5a2fea8517a7110001151a8e,""
+2017-12-12 09:55:12 -0800,0.03440052,-0.0040213,BTC,5083a5425b4a5b0200000001,5a3017ee068c3a0133a3306e,false,67.01,USD,2.99,USD,USD Wallet,5a3017ee068c3a0133a3306e,"","","","","","","",5a3017fd695a2200015dd9c1,""
+2017-12-13 06:56:19 -0800,0.02281522,-0.0115853,BTC,5083a5425b4a5b0200000001,5a313f89669988011d3d262e,false,197.01,USD,2.99,USD,USD Wallet,5a313f89669988011d3d262e,"","","","","","","",5a313f92a2227b0001272a70,""
+2017-12-14 05:21:38 -0800,0.0198825,-0.00293272,BTC,546ba79016a4e15e04000003,"",false,"","","","","","","","","","","","","",5a327ae2b8937a015373100a,""
+2017-12-14 05:26:17 -0800,0.02281522,0.00293272,BTC,59dfaf27a4c3a002d6e0bf49,"",false,"","","","","","","","","","","","","",5a327bf93a7ef101382b08ed,""
+2017-12-14 05:26:18 -0800,0.0198825,-0.00293272,BTC,1DuS9fTxeMnHN9FLP1JMo7rNPJ9iMDmfpD,"",false,"","","","","","","","","","","","","",5a327bfa90019a0137a95507,a3f3a9ac19c04d293a8f88b3cc698799be0dc660562ad5bbf3a1eaee0dabb74f
+2017-12-15 07:23:03 -0800,0.0,-0.0198825,BTC,546ba79016a4e15e04000003,"",false,"","","","","","","","","","","","","",5a33e8d727acfb021fb07ee2,""
+2017-12-15 07:25:26 -0800,0.00283,0.00283,BTC,59dfaf27a4c3a002d6e0bf49,"",false,"","","","","","","","","","","","","",5a33e966da8f44030b9567ac,""
+2017-12-15 07:25:27 -0800,0.0,-0.00283,BTC,1DuS9fTxeMnHN9FLP1JMo7rNPJ9iMDmfpD,"",false,"","","","","","","","","","","","","",5a33e9674d5f4f0161ab9a7d,464adbb37ef42faa6585390268d77d4b7d6a4a61fac922cc075920411996a529
+2017-12-31 12:17:21 -0800,0.01,0.01,BTC,59dfaf27a4c3a002d6e0bf49,"Bought 0.0100 BTC for $143.29 USD.
+
+Paid for with Fifth Third Bank - 5/3... ******1823. Your digital currency will arrive by the end of day on Tuesday Jan  9, 2018.",false,143.29,USD,2.99,USD,Fifth Third Bank - 5/3... ******1823,5a4945ce7721d3018ccc6554,"","","","","","","",5a4945d109e2d100013544d2,""
+2018-01-02 11:45:55 -0800,0.02,0.01,BTC,59dfaf27a4c3a002d6e0bf49,"Bought 0.0100 BTC for $155.72 USD.
+
+Paid for with Fifth Third Bank - 5/3... ******1823. Your digital currency will arrive by the end of day on Tuesday Jan  9, 2018.",false,155.72,USD,2.99,USD,Fifth Third Bank - 5/3... ******1823,5a4bdd54fa792c0158a8acd3,"","","","","","","",5a4be1733db62200010d5d4c,""
+2018-01-02 22:08:15 -0800,0.0370525,0.0170525,BTC,59dfaf27a4c3a002d6e0bf49,"",false,"","","","","","","","","","","","","",5a4c734fc24f64064d0d9b1f,""
+2018-01-02 22:08:15 -0800,0.02,-0.0170525,BTC,1DuS9fTxeMnHN9FLP1JMo7rNPJ9iMDmfpD,"",false,"","","","","","","","","","","","","",5a4c734f2b7cb101841bc123,8e22245e903e120dd0d6da58147af319ac0679e0cef15d786c8b4f5151099787
