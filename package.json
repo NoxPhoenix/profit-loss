@@ -16,7 +16,8 @@
     "promise-mysql": "^3.2.0",
     "request": "^2.83.0",
     "request-promise-native": "^1.0.5",
-    "sequelize": "^4.31.2"
+    "sequelize": "^4.31.2",
+    "then-fs": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^4.9.0",
