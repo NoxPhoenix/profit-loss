@@ -2,12 +2,16 @@ const Sequelize = require('sequelize');
 
 const currencySymbols = require('../utils/globals/currencySymbols');
 
-module.exports = function user (database) {
-  return database.define('user', {
+module.exports = (database) => {
+  return database.define('trade', {
     id: {
       type: Sequelize.UUID,
       default: Sequelize.UUIDV4,
       primaryKey: true,
+    },
+    date: {
+      type: Sequelize.DATE,
+      allowNull: false,
     },
     exchange: {
       type: Sequelize.ENUM,

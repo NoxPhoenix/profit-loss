@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-module.exports = function user (database) {
+module.exports = (database) => {
   return database.define('user', {
     id: {
       type: Sequelize.UUID,

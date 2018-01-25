@@ -10,5 +10,7 @@ const userData = new Sequelize({
   dialect: 'mysql',
 });
 
-require('./users')(userData);
-require('./trades')(userData);
+const user = require('./user')(userData);
+const trade = require('./trade')(userData);
+
+trade.belongsTo(user); // add field to trades for relating to a user.id
