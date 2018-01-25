@@ -14,3 +14,18 @@ const user = require('./user')(userData);
 const trade = require('./trade')(userData);
 
 trade.belongsTo(user); // add field to trades for relating to a user.id
+
+user.sync()
+  .then(() => {
+    console.log('users table created!');
+  });
+
+trade.sync()
+  .then(() => {
+    console.log('trades table created!');
+  });
+
+module.exports = {
+  user,
+  trade,
+};
