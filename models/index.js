@@ -11,3 +11,4 @@ const userData = new Sequelize({
 });
 
 require('./users')(userData);
+require('./trades')(userData);

@@ -1,5 +1,4 @@
-const fs = require('fs');
-const csvData = require('csvdata');
+const csvParser = require('./services/csvParser');
 
 // csvData.load('./csvTests/Coinbase-59dfaf27a4c3a002d6e0bf49-Transactions-Report-2018-01-23-19_28_34.csv')
 //   .then((data) => {
@@ -9,5 +8,7 @@ const csvData = require('csvdata');
 //     console.log(err);
 //   });
 
-const file = fs.readFileSync('./csvTests/Coinbase-59dfaf27a4c3a002d6e0bf49-Transactions-Report-2018-01-23-19_28_34.csv', 'utf8');
-console.log(typeof file);
+csvParser('./csvTests/Coinbase-59dfaf27a4c3a002d6e0bf49-Transactions-Report-2018-01-23-19_28_34.csv')
+  .then((parsed) => {
+    console.log(parsed);
+  });
