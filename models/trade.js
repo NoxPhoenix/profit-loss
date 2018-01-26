@@ -13,14 +13,13 @@ module.exports = (database) => {
       type: Sequelize.DATE,
       allowNull: false,
     },
-    exchange: {
-      type: Sequelize.ENUM,
-      values: ['Coinbase', 'Binance', 'Bittrex', 'CoinExchange.io'],
-      allowNull: false,
-    },
     type: {
       type: Sequelize.ENUM,
-      values: ['purchase', 'withdrawal', 'deposit', 'trade'],
+      values: ['purchase', 'withdrawal', 'deposit', 'trade', 'transfer'],
+      allowNull: false,
+    },
+    amount: {
+      type: Sequelize.DECIMAL,
       allowNull: false,
     },
     startingCurrency: {
@@ -31,6 +30,11 @@ module.exports = (database) => {
     endingCurrency: {
       type: Sequelize.ENUM,
       values: currencySymbols,
+      allowNull: false,
+    },
+    exchange: {
+      type: Sequelize.ENUM,
+      values: ['Coinbase', 'Binance', 'Bittrex', 'CoinExchange.io'],
       allowNull: false,
     },
   });

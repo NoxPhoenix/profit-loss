@@ -10,22 +10,22 @@ const userData = new Sequelize({
   dialect: 'mysql',
 });
 
-const user = require('./user')(userData);
-const trade = require('./trade')(userData);
+const User = require('./user')(userData);
+const Trade = require('./trade')(userData);
 
-trade.belongsTo(user); // add field to trades for relating to a user.id
+Trade.belongsTo(User); // add field to trades for relating to a user.id
 
-user.sync()
+User.sync()
   .then(() => {
     console.log('users table created!');
   });
 
-trade.sync()
+Trade.sync()
   .then(() => {
     console.log('trades table created!');
   });
 
 module.exports = {
-  user,
-  trade,
+  User,
+  Trade,
 };

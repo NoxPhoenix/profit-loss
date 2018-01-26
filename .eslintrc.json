@@ -5,6 +5,7 @@
     ],
     "rules": {
         "arrow-body-style": ["warn", "never"],
+        "class-methods-use-this": ["warn"],
         "max-len": ["warn", 130],
         "space-before-function-paren": ["error", "always"],    "comma-dangle": ["error", {
             "arrays": "always-multiline",

@@ -1,7 +1,7 @@
 const { time } = require('../../utils');
 const BaseAggragateInterval = require('./baseStrategy');
 
-module.exports = class Minute extends BaseAggragateInterval {
+module.exports = class Hour extends BaseAggragateInterval {
   timeRange () {
     this.startTime = this.endTime.subtract(60, 'minutes');
     const range = time.range(this.startTime, this.endTime);

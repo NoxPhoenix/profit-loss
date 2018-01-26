@@ -1,15 +1,15 @@
 const CoinbaseData = require('./coinbase');
 
-function chooseStrategy (filePath) {
+function chooseStrategy (userId, filePath) {
   switch (true) {
-    case (filePath.includes('coinbase')):
-      return Promise.resolve(new CoinbaseData(filePath));
+    case (filePath.includes('Coinbase')):
+      return Promise.resolve(new CoinbaseData(userId, filePath));
     default:
-      return Promise.resolve(new CoinbaseData(filePath));
+      return Promise.resolve(new CoinbaseData(userId, filePath));
   }
 }
 
-module.exports = function parseCSV (filePath) {
-  return chooseStrategy(filePath)
+module.exports = function parseCSV (userId, filePath) {
+  return chooseStrategy(userId, filePath)
     .then(strategy => strategy.parseCSV());
 };
