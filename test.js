@@ -1,5 +1,6 @@
-const csvParser = require('./services/csvParser');
+// const csvParser = require('./services/csvParser');
 // const { User, Trade } = require('./models');
+const repository = require('./repository');
 
 // csvParser('3cd8c833-86f9-4a7f-84fb-78c76139b3e2', './csvTests/Coinbase-59dfaf27a4c3a002d6e0bf49-Transactions-Report-2018-01-23-19_28_34.csv')
 //   .then((parsed) => {
@@ -23,4 +24,7 @@ const csvParser = require('./services/csvParser');
 //     console.log(created);
 //   });
 
-console.log(Math.abs(-0.000356));
+repository.getAllTransactionsForUser('3cd8c833-86f9-4a7f-84fb-78c76139b3e2')
+  .then((trades) => {
+    console.log(trades);
+  });
