@@ -1,8 +1,11 @@
-// const csvParser = require('./services/csvParser');
-// const { User, Trade } = require('./models');
-const repository = require('./repository');
+const Promise = require('bluebird');
 
-// csvParser('3cd8c833-86f9-4a7f-84fb-78c76139b3e2', './csvTests/Coinbase-59dfaf27a4c3a002d6e0bf49-Transactions-Report-2018-01-23-19_28_34.csv')
+const csvParser = require('./services/csvParser');
+const { User, Transaction } = require('./models');
+const repository = require('./repository');
+const profitService = require('./services/historicalProfitLoss');
+
+// csvParser('3cd8c833-86f9-4a7f-84fb-78c76139b3e2', './csvTests/Coinbase-59dfaf27a4c3a002d6e0bf4d-Transactions-Report-2018-01-27-05_39_47.csv')
 //   .then((parsed) => {
 //     console.log(parsed);
 //   });
@@ -24,7 +27,9 @@ const repository = require('./repository');
 //     console.log(created);
 //   });
 
-repository.getAllTransactionsForUser('3cd8c833-86f9-4a7f-84fb-78c76139b3e2')
-  .then((trades) => {
-    console.log(trades);
-  });
+// Transaction.aggregate('endingCurrency', 'DISTINCT', { plain: false })
+//   .then((trades) => {
+//     console.log(trades);
+//   });
+
+profitService.perform(null, '3cd8c833-86f9-4a7f-84fb-78c76139b3e2');

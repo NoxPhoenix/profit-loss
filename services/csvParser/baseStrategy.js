@@ -1,4 +1,4 @@
-const { Trade } = require('../../models');
+const { Transaction } = require('../../models');
 
 /* eslint-disable class-methods-use-this */
 
@@ -24,6 +24,6 @@ module.exports = class BaseStrategy {
   }
 
   saveTransactions (transactions) {
-    return Trade.bulkCreate(transactions, { validate: true });
+    return Transaction.bulkCreate(transactions, { validate: true });
   }
 };

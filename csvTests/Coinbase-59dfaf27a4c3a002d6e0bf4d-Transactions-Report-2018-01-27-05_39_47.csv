@@ -1,0 +1,20 @@
+Transactions
+User,mr.mikyo@gmail.com,59dfaf26a4c3a002d6e0bf2b
+Account,ETH Wallet,59dfaf27a4c3a002d6e0bf4d
+
+Timestamp,Balance,Amount,Currency,To,Notes,Instantly Exchanged,Transfer Total,Transfer Total Currency,Transfer Fee,Transfer Fee Currency,Transfer Payment Method,Transfer ID,Order Price,Order Currency,Order BTC,Order Tracking Code,Order Custom Parameter,Order Paid Out,Recurring Payment ID,Coinbase ID (visit https://www.coinbase.com/transactions/[ID] in your browser),Bitcoin Hash (visit https://www.coinbase.com/tx/[HASH] in your browser for more info)
+2017-10-12 11:16:44 -0700,0.0607511,0.0607511,ETH,59dfaf27a4c3a002d6e0bf4d,Bought 0.0607511 ETH for $20.00 USD.,false,20.0,USD,1.49,USD,MasterCard debit ********6079,59dfb1860f5de00195c00bf8,"","","","","","","",59dfb18ced83670001b1cd9c,""
+2017-10-13 06:36:02 -0700,0.19921818,0.13846708,ETH,59dfaf27a4c3a002d6e0bf4d,Bought 0.13846708 ETH for $50.00 USD.,false,50.0,USD,1.99,USD,MasterCard debit ********6079,59e0c13fec3b1c02036d4bd8,"","","","","","","",59e0c142d3a90900010db316,""
+2017-10-13 06:36:43 -0700,0.30884396,0.10962578,ETH,59dfaf27a4c3a002d6e0bf4d,Bought 0.10962578 ETH for $40.00 USD.,false,40.0,USD,1.99,USD,MasterCard debit ********6079,59e0c16935625502227047d0,"","","","","","","",59e0c16bbcbecd0001ffd8fe,""
+2017-10-17 06:55:13 -0700,0.38120665,0.07236269,ETH,59dfaf27a4c3a002d6e0bf4d,Bought 0.07236269 ETH for $25.00 USD.,false,25.0,USD,1.49,USD,MasterCard debit ********6079,59e60bbc171e7b012d1fd147,"","","","","","","",59e60bc19f49040001a708fd,""
+2017-10-18 06:40:51 -0700,0.41159501,0.03038836,ETH,59dfaf27a4c3a002d6e0bf4d,Bought 0.03038836 ETH for $10.00 USD.,false,10.0,USD,0.99,USD,MasterCard debit ********6079,59e759e06d1aff00c21f9a0c,"","","","","","","",59e759e31a0bd200016713a2,""
+2017-11-21 07:34:27 -0800,0.0,-0.41159501,ETH,572a417ae1764802e1000599,5a144780d33ef6034446f6ff,false,149.18,USD,2.99,USD,USD Wallet,5a144780d33ef6034446f6ff,"","","","","","","",5a1447835ca4aa00013d279b,""
+2017-11-28 13:01:36 -0800,0.20472834,0.20472834,ETH,59dfaf27a4c3a002d6e0bf4d,"Bought 0.20472834 ETH for $100.00 USD.
+
+Paid for with Fifth Third Bank - 5/3... ******1823. Your digital currency will arrive by the end of day on Tuesday Dec  5, 2017.",false,100.0,USD,2.99,USD,Fifth Third Bank - 5/3... ******1823,5a1dceab7468a500d1ad7764,"","","","","","","",5a1dceb01946d4000165c7fa,""
+2017-12-06 07:26:46 -0800,0.41677451,0.21204617,ETH,59dfaf27a4c3a002d6e0bf4d,Bought 0.21204617 ETH for $100.00 USD.,false,100.0,USD,3.84,USD,MasterCard debit ********6079,5a280c31bad6480283b23547,"","","","","","","",5a280c36524e2200010f210a,""
+2017-12-06 07:30:05 -0800,0.19427251,-0.222502,ETH,0x152797a7721b139e8c84cf45825f2ffc081737aa,"",false,"","","","","","","","","","","","","",5a280cfde97658011fb8f27a,632bc02880bc05eda99366453c9c8ff73eaa3f7fa6898c0613f585a77b06b8b8
+2017-12-11 12:28:05 -0800,0.11997751,-0.074295,ETH,0x152797a7721b139e8c84cf45825f2ffc081737aa,"",false,"","","","","","","","","","","","","",5a2eea55e9c1ef02af194f69,d55346c0e5625c0bf668ade404a4fcfde3581ec1effa76092d5db2faaea0e86b
+2017-12-12 06:45:22 -0800,0.23686312,0.11688561,ETH,59dfaf27a4c3a002d6e0bf4d,Bought 0.11688561 ETH for $72.08 USD.,false,72.08,USD,2.99,USD,USD Wallet,5a2feb7678112a0148bafa49,"","","","","","","",5a2feb7f2bced10001154a13,""
+2017-12-12 09:56:32 -0800,0.34092332,0.1040602,ETH,59dfaf27a4c3a002d6e0bf4d,Bought 0.1040602 ETH for $67.01 USD.,false,67.01,USD,2.99,USD,USD Wallet,5a30183e8892210191fdbb35,"","","","","","","",5a30184d976fa00001f97311,""
+2017-12-13 06:59:46 -0800,0.43152572,0.0906024,ETH,59dfaf27a4c3a002d6e0bf4d,Bought 0.0906024 ETH for $72.01 USD.,false,72.01,USD,2.99,USD,USD Wallet,5a3140549bfd7a01908e7f8e,"","","","","","","",5a3140606dd0a7000129c0d1,""

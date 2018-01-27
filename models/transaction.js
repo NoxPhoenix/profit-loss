@@ -29,7 +29,6 @@ module.exports = (database) => {
     startingCurrency: {
       type: Sequelize.ENUM,
       values: currencySymbols,
-      allowNull: false,
       unique: 'compositeIndex',
     },
     endingCurrency: {

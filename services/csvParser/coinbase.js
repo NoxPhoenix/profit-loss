@@ -36,6 +36,9 @@ module.exports = class CoinbaseData extends BaseStrategy {
         endingCurrency,
         userId: this.userId,
       };
-    });
+    })
+      .catch((err) => {
+        throw err;
+      });
   }
 };
