@@ -31,7 +31,7 @@ module.exports = class CoinbaseData extends BaseStrategy {
         date: transaction.Timestamp,
         exchange: 'Coinbase',
         type,
-        amount: Math.abs(transaction.Amount),
+        amount: Math.abs(parseFloat(transaction.Amount, 10)),
         startingCurrency,
         endingCurrency,
         userId: this.userId,

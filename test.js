@@ -1,35 +1,46 @@
 const Promise = require('bluebird');
+const _ = require('lodash');
 
 const csvParser = require('./services/csvParser');
 const { User, Transaction } = require('./models');
-const repository = require('./repository');
+// const repository = require('./repository');
 const profitService = require('./services/historicalProfitLoss');
 
-// csvParser('3cd8c833-86f9-4a7f-84fb-78c76139b3e2', './csvTests/Coinbase-59dfaf27a4c3a002d6e0bf4d-Transactions-Report-2018-01-27-05_39_47.csv')
-//   .then((parsed) => {
-//     console.log(parsed);
+function wait (milliseconds) {
+  return new Promise(resolve => setTimeout(() => resolve(), milliseconds));
+}
+
+// wait(3000)
+//   .then(() => {
+//     return csvParser('3cd8c833-86f9-4a7f-84fb-78c76139b3e2', './csvTests/Coinbase-59dfaf27a4c3a002d6e0bf49-Transactions-Report-2018-01-23-19_28_34.csv')
+//       .then((parsed) => {
+//         console.log(parsed);
+//       });
 //   });
 
-// user.findOne({
-//   where: {
-//     username: 'nug man',
-//   },
-// })
-//   .then(({ id }) => trade.create({
-//     date: '1999010101',
-//     exchange: 'Coinbase',
-//     startingCurrency: 'USD',
-//     endingCurrency: 'BTC',
-//     type: 'Purchase',
-//     userId: id,
-//   }))
-//   .then((created) => {
-//     console.log(created);
-//   });
+
+User.findOne({
+  where: {
+    username: 'nug man',
+  },
+})
+  .then(({ id }) => Transaction.create({
+    date: '1999010101',
+    exchange: 'Coinbase',
+    amount: 0.332,
+    startingCurrency: 'BUTT',
+    endingCurrency: 'BTC',
+    type: 'Purchase',
+    userId: id,
+  }, { validate: true }))
+  .then((created) => {
+    console.log(created);
+  });
 
 // Transaction.aggregate('endingCurrency', 'DISTINCT', { plain: false })
 //   .then((trades) => {
 //     console.log(trades);
 //   });
 
-profitService.perform(null, '3cd8c833-86f9-4a7f-84fb-78c76139b3e2');
+// profitService.perform(null, '3cd8c833-86f9-4a7f-84fb-78c76139b3e2')
+//   .then(transactions => console.log(Object.keys(transactions)));

@@ -5,9 +5,13 @@ const repository = require('../repository');
 
 function separateTransactionsByCurrency (transactions, currencies) {
   return Promise.map(currencies, (currency) => {
-    const relevantTransaction = _.filter(transactions, ({ startingCurrency, endingCurrency }) => startingCurrency === currency || endingCurrency === currency); 
+    const relevantTransactions = _.filter(transactions, ({ startingCurrency, endingCurrency }) => startingCurrency === currency || endingCurrency === currency);
+    return { [currency]: relevantTransactions };
   })
+    .then(transactionsByCoin => Object.assign({}, ...transactionsByCoin));
 }
+
+// function
 
 module.exports = {
   perform (timeRange, userId) {
@@ -20,5 +24,6 @@ module.exports = {
       repository.getAllTransactionCurrenciesForUserId(userId),
     ])
       .spread(separateTransactionsByCurrency);
+      // .then((transactionsByCoin => calclulateAggregateProfitLoss))
   },
 };

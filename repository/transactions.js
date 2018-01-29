@@ -20,7 +20,7 @@ module.exports = {
   getAllTransactionCurrenciesForUserId (userId) {
     return Promise.all([
       findAllUniqueFieldValues(Transaction, 'startingCurrency', { where: { userId } }),
-      findAllUniqueFieldValues(Transaction, 'endingCurrency', { where: { userId } })
+      findAllUniqueFieldValues(Transaction, 'endingCurrency', { where: { userId } }),
     ])
       .then((results, other) => {
         console.log('results', other);

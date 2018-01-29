@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 const currencySymbols = require('../utils/globals/currencySymbols');
 
 module.exports = (database) => {
-  return database.define('trade', {
+  return database.define('transaction', {
     id: {
       type: Sequelize.UUID,
       defaultValue: Sequelize.UUIDV4,
@@ -22,7 +22,7 @@ module.exports = (database) => {
       unique: 'compositeIndex',
     },
     amount: {
-      type: Sequelize.DECIMAL,
+      type: Sequelize.REAL,
       allowNull: false,
       unique: 'compositeIndex',
     },
@@ -30,6 +30,7 @@ module.exports = (database) => {
       type: Sequelize.ENUM,
       values: currencySymbols,
       unique: 'compositeIndex',
+      allowNull: false,
     },
     endingCurrency: {
       type: Sequelize.ENUM,
