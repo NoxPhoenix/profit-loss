@@ -14,7 +14,8 @@ module.exports = {
       where: {
         userId,
       },
-    });
+    })
+    .then(this.getDataValues)
   },
 
   getAllTransactionCurrenciesForUserId (userId) {
@@ -27,6 +28,7 @@ module.exports = {
         return results;
       })
       .then(_.flatten)
-      .then(values => values.map(({ DISTINCT: value }) => value));
+      .then(values => values.map(({ DISTINCT: value }) => value))
+      .then(this.getDataValues)
   },
 };

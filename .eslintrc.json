@@ -4,6 +4,7 @@
         "import"
     ],
     "rules": {
+        "no-console": ["warn", "never"],
         "arrow-body-style": ["warn", "never"],
         "class-methods-use-this": ["warn"],
         "max-len": ["warn", 130],

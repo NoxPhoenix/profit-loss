@@ -9,7 +9,7 @@ function chooseStrategy (userId, filePath) {
   }
 }
 
-module.exports = function parseCSV (userId, filePath) {
+module.exports = (userId, filePath) => {
   return chooseStrategy(userId, filePath)
     .then(strategy => (
       strategy.parseCSV()

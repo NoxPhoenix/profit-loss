@@ -4,8 +4,6 @@ const csv = require('neat-csv');
 
 const BaseStrategy = require('./baseStrategy');
 
-/* eslint-disable class-methods-use-this */
-
 module.exports = class CoinbaseData extends BaseStrategy {
   parseCSV () {
     return readFile(this.csvDataPath, 'utf8')
@@ -15,12 +13,12 @@ module.exports = class CoinbaseData extends BaseStrategy {
       })
       .then(data => csv(data))
       .catch((err) => {
-        console.log(err);
+        console.warn('could not parse csv', err);
+        throw err;
       });
   }
 
   createTrades (data) {
-    console.log(this.csvDataPath);
     return Promise.map(data, (transaction) => {
       const startingCurrency = transaction['Transfer Total Currency'] || null;
       const endingCurrency = transaction.Currency;
