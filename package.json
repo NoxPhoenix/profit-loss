@@ -17,6 +17,7 @@
     "mysql2": "^1.5.1",
     "neat-csv": "^2.1.0",
     "p-csv-parser": "^1.0.2",
+    "pg": "^6.4.2",
     "promise-mysql": "^3.2.0",
     "request": "^2.83.0",
     "request-promise-native": "^1.0.5",

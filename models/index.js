@@ -7,6 +7,7 @@ const userData = new Sequelize({
   username: config.USERDATA_USERNAME,
   password: config.USERDATA_PASSWORD,
   host: config.USERDATA_SERVER,
+  port: config.USERDATA_PORT,
   dialect: 'mysql',
 });
 

@@ -14,8 +14,6 @@ module.exports = class CoinbaseData extends BaseStrategy {
         return contents.replace(header, '');
       })
       .then(data => csv(data))
-      .then(parsedData => this.createTrades(parsedData))
-      .then(cleanData => this.saveTransactions(cleanData))
       .catch((err) => {
         console.log(err);
       });
@@ -24,7 +22,7 @@ module.exports = class CoinbaseData extends BaseStrategy {
   createTrades (data) {
     console.log(this.csvDataPath);
     return Promise.map(data, (transaction) => {
-      const startingCurrency = transaction['Transfer Total Currency'];
+      const startingCurrency = transaction['Transfer Total Currency'] || null;
       const endingCurrency = transaction.Currency;
       const type = this.transactionType(startingCurrency, endingCurrency, transaction.Amount);
       return {

@@ -11,5 +11,12 @@ function chooseStrategy (userId, filePath) {
 
 module.exports = function parseCSV (userId, filePath) {
   return chooseStrategy(userId, filePath)
-    .then(strategy => strategy.parseCSV());
+    .then(strategy => (
+      strategy.parseCSV()
+        .then(data => strategy.createTrades(data))
+        .then(cleanData => strategy.saveTransactions(cleanData))
+    ))
+    .catch((err) => {
+      throw err;
+    });
 };
