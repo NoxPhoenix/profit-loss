@@ -17,7 +17,9 @@ function determineAllCurrencies (transactions) {
   return {transactions, currencies: _.union(startingCurrencies, endingCurrencies) };
 }
 
-// function
+function calculate (coin, transactions, aggragateIntervals) {
+  // fetch all prices for coin and agi
+}
 
 module.exports = function perform (timeRange, userId) {
     // fetch users transactions
