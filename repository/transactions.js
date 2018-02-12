@@ -15,7 +15,7 @@ module.exports = {
         userId,
       },
     })
-    .then(this.getDataValues)
+      .then(this.getDataValues);
   },
 
   getAllTransactionCurrenciesForUserId (userId) {
@@ -23,12 +23,8 @@ module.exports = {
       findAllUniqueFieldValues(Transaction, 'startingCurrency', { where: { userId } }),
       findAllUniqueFieldValues(Transaction, 'endingCurrency', { where: { userId } }),
     ])
-      .then((results, other) => {
-        console.log('results', other);
-        return results;
-      })
       .then(_.flatten)
       .then(values => values.map(({ DISTINCT: value }) => value))
-      .then(this.getDataValues)
+      .then(this.getDataValues);
   },
 };

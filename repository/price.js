@@ -22,4 +22,8 @@ module.exports = {
     console.log(query);
     return cryptoCompareClient.getHistoricalPriceByMinute(query);
   },
+
+  getHistoricalPriceForHourAGI (coin, endingTimeStamp) {
+    return this.getHistoricalPriceByMinute
+  },
 };

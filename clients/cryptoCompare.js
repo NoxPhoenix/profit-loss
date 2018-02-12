@@ -1,15 +1,10 @@
 const request = require('request-promise-native');
-const _ = require('lodash');
-
-function buildQuery (query) {
-  const params = _.map(Object.keys(query), prop => `${prop}=${query[prop]}`);
-  return params.join('&');
-}
 
 module.exports = {
   getCurrent (query) {
     const options = {
-      url: `https://min-api.cryptocompare.com/data/price?${buildQuery(query)}`,
+      url: 'https://min-api.cryptocompare.com/data/price?',
+      qs: query,
     };
     return request(options)
       .then(price => price);
@@ -17,7 +12,8 @@ module.exports = {
 
   getHistoricalPriceByMinute (query) {
     const options = {
-      url: `https://min-api.cryptocompare.com/data/histominute?${buildQuery(query)}`,
+      url: 'https://min-api.cryptocompare.com/data/histominute?',
+      qs: query,
     };
     console.log(options.url);
     return request(options)
