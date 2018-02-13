@@ -15,7 +15,6 @@ module.exports = {
       url: 'https://min-api.cryptocompare.com/data/histominute?',
       qs: query,
     };
-    console.log(options.url);
     return request(options)
       .then(prices => prices);
   },
