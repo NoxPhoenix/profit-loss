@@ -6,6 +6,6 @@ module.exports = class Day extends BaseAggragateInterval {
     this.startTime = this.endTime.subtract(24, 'hours');
     const range = time.range(this.startTime, this.endTime);
     // returns an array of moment.js instances for every 20 minutes of time in the time range.
-    return range.by('minute', { step: 48 });
+    return { range, agi: Array.from(range.by('minute', { step: 48 })) };
   }
 };

@@ -21,15 +21,9 @@ function wait (milliseconds) {
 //       });
 //   });
 
-// wait(3000)
-//   .then(() => {
-//     return calculateAggregateIntervalProfitLoss(null, '212f3b8d-913d-4a6b-b28a-ddb5e1164461');
-//   });
-
-timeRange('hour', new Date())
-  .then((vari) => {
-    console.log('test');
-    console.log(vari);
+wait(3000)
+  .then(() => {
+    return calculateAggregateIntervalProfitLoss({ length: 'hour', endTime: new Date() }, '212f3b8d-913d-4a6b-b28a-ddb5e1164461');
   });
 
 // User.findOne({

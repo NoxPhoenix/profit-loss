@@ -25,10 +25,10 @@ module.exports = {
     return cryptoCompareClient.getHistoricalPriceByMinute(query);
   },
 
-  getHistoricalPriceForHourAGI (coin, endingTimeStamp) {
-    if (time.isBefore(endingTimeStamp, time.now().subtract(7, 'days'))) throw new Error('Date to old for hour data');
+  getHistoricalPriceForHourAGI (coin, endingTime) {
+    if (time.isBefore(endingTime, time.now().subtract(7, 'days'))) throw new Error('Date to old for hour data');
     const query = {
-      toTs: time.unix(endingTimeStamp),
+      toTs: time.unix(endingTime),
       aggregate: 4,
     };
     return this.getHistoricalPriceByMinute(coin, query);

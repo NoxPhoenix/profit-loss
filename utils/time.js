@@ -34,10 +34,7 @@ module.exports = {
     return (this.format(timeStamp).isBefore(this.format(comparativeTimestamp)));
   },
 
-  getLatestDateFromArray (array, field) {
-    if (array.length) {
-      return array.reduce((m, i) => (i.field > m) && i || m, "")
-        .field;
-    }
+  sortOldestToNewest (objectArray, field) {
+    return objectArray.sort((a, b) => +this.format(a[field]) - +this.format(b[field]));
   },
 };
