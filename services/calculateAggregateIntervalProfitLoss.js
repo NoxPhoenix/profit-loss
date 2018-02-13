@@ -38,6 +38,11 @@ function separateAggregateIntervalsByTransactions (transactions, aggregateInterv
   return [...separateIntervals, aggregateIntervals];
 }
 
+function caclulateHoldings (transactions, endTime) {
+const relevanteTransaction = transactions.filter(transaction => time.isBefore(transaction.date, endTime));
+
+}
+
 function calculate (coin, transactions, aggregateIntervals, timeRange) {
   return Promise.all([
     separateAggregateIntervalsByTransactions(transactions, aggregateIntervals, timeRange),
