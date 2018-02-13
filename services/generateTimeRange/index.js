@@ -19,6 +19,5 @@ module.exports = function build (length, endTime) {
   return chooseStrategy(length, endTime)
     .then(strategy => (
       strategy.timeRange()
-        .then(console.log)
     ));
 };

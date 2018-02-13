@@ -3,9 +3,9 @@ const BaseAggragateInterval = require('./baseStrategy');
 
 module.exports = class Hour extends BaseAggragateInterval {
   timeRange () {
-    this.startTime = this.endTime.subtract(60, 'minutes');
+    this.startTime = this.endTime.clone().subtract(60, 'minutes');
     const range = time.range(this.startTime, this.endTime);
     // returns an array of moment.js instances for every 4 minutes of time in the time range.
-    return range.by('minute', { step: 4 });
+    return Array.from(range.by('second', { step: 90 }));
   }
 };
