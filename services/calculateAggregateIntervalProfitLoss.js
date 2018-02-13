@@ -18,7 +18,7 @@ function determineAllCurrencies (transactions) {
 }
 
 function calculate (coin, transactions, aggragateIntervals) {
-  // fetch all prices for coin in agi
+  return repository.getHistoricalPriceForHourAGI(coin, )
 }
 
 module.exports = function perform (timeRange, userId) {
