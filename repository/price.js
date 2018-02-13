@@ -1,8 +1,10 @@
 const _ = require('lodash');
 const { cryptoCompareClient } = require('../clients');
 
+const time = require('../utils/time');
+
 const baseParams = ['fsym', 'tsyms', 'e'];
-const historicalParams = baseParams.concat(['tsym', 'aggregate', 'limit']);
+const historicalParams = baseParams.concat(['tsym', 'aggregate', 'limit', 'toTs']);
 
 module.exports = {
   getCurrentPriceInUSD (coin, e = 'CCCAGG') {
@@ -24,6 +26,11 @@ module.exports = {
   },
 
   getHistoricalPriceForHourAGI (coin, endingTimeStamp) {
-    return this.getHistoricalPriceByMinute
+    if (time.isBefore(endingTimeStamp, time.now().subtract(7, 'days'))) throw new Error('Date to old for hour data');
+    const query = {
+      toTs: time.unix(endingTimeStamp),
+      aggregate: 4,
+    };
+    return this.getHistoricalPriceByMinute(coin, query);
   },
 };
