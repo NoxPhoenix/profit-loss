@@ -22,7 +22,22 @@ module.exports = {
     return time.toISOString();
   },
 
+  unix (time) {
+    return this.format(time).unix();
+  },
+
   range (startDate, endDate) {
     return moment.range(this.format(startDate), this.format(endDate));
+  },
+
+  isBefore (timeStamp, comparativeTimestamp) {
+    return (this.format(timeStamp).isBefore(this.format(comparativeTimestamp)));
+  },
+
+  getLatestDateFromArray (array, field) {
+    if (array.length) {
+      return array.reduce((m, i) => (i.MeasureDate > m) && i || m, "")
+               .MeasureDate;
+   }
   },
 };
