@@ -36,8 +36,8 @@ module.exports = {
 
   getLatestDateFromArray (array, field) {
     if (array.length) {
-      return array.reduce((m, i) => (i.MeasureDate > m) && i || m, "")
-               .MeasureDate;
-   }
+      return array.reduce((m, i) => (i.field > m) && i || m, "")
+        .field;
+    }
   },
 };
