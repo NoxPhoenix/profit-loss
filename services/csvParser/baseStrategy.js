@@ -13,9 +13,9 @@ module.exports = class BaseStrategy {
       case (startingCurrency === 'USD'):
         return 'purchase';
       case (endingCurrency === 'USD'):
-        return 'withdrawal';
+        return 'sale';
       case (!startingCurrency && amount < 0):
-        return 'transfer';
+        return 'withdrawal';
       case (!startingCurrency && amount > 0):
         return 'deposit';
       default:
