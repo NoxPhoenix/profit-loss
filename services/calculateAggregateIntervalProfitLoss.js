@@ -38,9 +38,15 @@ function separateAggregateIntervalsByTransactions (transactions, aggregateInterv
   return [...separateIntervals, aggregateIntervals];
 }
 
-function caclulateHoldings (transactions, endTime) {
-const relevanteTransaction = transactions.filter(transaction => time.isBefore(transaction.date, endTime));
+function isPositiveTranaction (coin, { type, endingCurrency }) {
+  if (type === 'purchase' || type === 'deposit') return true;
+  else if (type === 'trade' && endingCurrency === coin) return true;
+  return false;
+}
 
+function caclulateHoldings (coin, transactions, endTime) {
+const relevantTransactions = transactions.filter(transaction => time.isBefore(transaction.date, endTime));
+const positiveTransactions = relevantTransactions.filter()
 }
 
 function calculate (coin, transactions, aggregateIntervals, timeRange) {
@@ -50,6 +56,7 @@ function calculate (coin, transactions, aggregateIntervals, timeRange) {
   ])
     .spread((intervalGroups, prices) => {
       console.log(intervalGroups);
+      caclulateHoldings(coin, transactions //intervalGroup endTime goes here)
     });
 }
 
